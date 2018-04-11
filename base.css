@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/*初期化*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-family: "ＭＳ Ｐゴシック",Arial,sans-serif;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    color: #333333;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+p {
+	line-height: 1.3em;
+}
+
+blockquote, q {
+    quotes: none;
+}:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td {
+    vertical-align: middle;
+}
+
+/*セレクトボックス用*/
+.select_field {
+    height: 22px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 2px 0 2px 2px;
+    vertical-align: middle;    
+    margin-right: 3px;
+}* + html .select_field {
+    height: 19px;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 2px;
+    padding-left: 2px;
+    vertical-align: middle;
+    margin-right: 3px;    
+}
+
+/*テキストフォーム用*/
+.frm_txt {
+    height: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 2px;
+    padding-left: 2px;
+    vertical-align: middle;
+    margin-right: 3px;
+	 display: inline;
+}* + html .frm_txt {
+    height: 19px;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 2px;
+    padding-left: 2px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.frm_txt_mail {
+    height: 22px;
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 2px;
+    padding-left: 2px;
+    vertical-align: middle;
+    margin-right: 3px;
+}* + html .frm_txt_mail {
+    height: 21px;
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 2px;
+    padding-left: 2px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+/*ラジオボタン用*/
+.frm_radio {
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 3px;
+}* + html .frm_radio {
+    height: 19px;    
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+/*テキストエリア用*/
+.frm_txtarea {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 2px;
+    padding-left: 2px;
+    vertical-align: middle;
+    margin-right: 3px;
+}* + html .frm_txtarea {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 2px;
+    padding-left: 2px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+
+/*clearfix*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+/*リンク文字色*/
+a:link {
+    color: #006600;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #006600;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #85C05E;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #85C05E;
+    text-decoration: underline;
+}
+
+/*グリッド**/
+/*メイン*/
+#main {
+    width: auto;
+    /*width: 1000px;
+    margin-left: auto;
+    margin-right: auto;*/
+    text-align: center;
+}
+
+/*コンテンツエリア*/
+#contents_wrapper {
+    width: 905px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+#contents_area {
+    width: 905px;
+}
+
+.contents_area {
+    width: 905px;
+    margin-bottom: 15px;
+}
+.contents_area_no_mgn {
+    width: 905px;
+    margin-bottom: 0px;
+}
+
+/*左コンテンツ*/
+#leftcontents {
+    width: 180px;
+    float: left;
+}
+
+.leftcontents {
+    width: 200px;
+    float: left;
+}
+
+/*右コンテンツ*/
+#rightcontents {
+    width: 705px;
+    float: left;
+	padding-left: 20px;
+}
+
+.rightcontents {
+    width: 705px;
+    float: right;
+}
+
+.rightcontents_02 {
+    width: 705px;
+    margin-bottom: 15px;
+}
+
+/*エラー文字*/
+.error_message_area {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #FF0000;
+    font-weight: bold;
+    text-align: left;
+}
+
+.error_message_area ul {
+    margin: 0px;
+	padding: 15px 15px 15px 20px;
+    list-style-type: disc;
+	border: 2px solid #e00;
+	background: #fff7f7;
+}
+
+.error_message_area li {
+    color: #FF0000;
+    font-weight: bold;
+}
+
