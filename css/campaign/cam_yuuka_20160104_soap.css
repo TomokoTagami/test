@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+
+
+/* ---------------------------------------------
+	.CamWrap
+	---------------------------------------------*/
+.CamWrap { background: url(../../images/campaign/20160104/soap/bg_top.jpg) top center no-repeat;}
+.Inner {
+	background: url(../../images/campaign/20160104/soap/bg_bottom.jpg) bottom center no-repeat;
+	padding-bottom: 70px;
+}
+
+
+/*	.TitleArea
+-------------------------------------*/
+.TitleArea {
+	position: relative;
+	height: 202px;
+}
+.TitleArea h1,
+.TitleArea .Period { position: absolute;}
+.TitleArea h1 {
+	top: 96px;
+	left: 35px;
+}
+.TitleArea .Period {
+	top: 5px;
+	left: 0;
+}
+
+/*	.MainArea
+-------------------------------------*/
+.MainArea,
+.ExampleArea {
+	width: 660px;
+	margin: 0 auto;
+	background: #fff;
+}
+.MainArea h2 {}
+.MainArea .Detail,
+.MainArea p.comment,
+.MainArea dl {
+	padding: 0 32px;
+	border-left: 1px solid #F90;
+	border-right: 1px solid #F90;
+}
+.MainArea .Detail,
+.MainArea p.comment { padding-bottom: 5px;}
+.MainArea dl { padding-bottom: 16px;}
+
+
+/*	.ExampleArea
+-------------------------------------*/
+.ExampleArea { margin-bottom: 6px;}
+.ExampleArea .clearfix {
+	border-left: 1px solid #F90;
+	border-right: 1px solid #F90;
+	border-bottom: 1px solid #F90;
+}
+.ExleftBox {
+	width: 328px;
+	border-right: 1px solid #F90;
+	background: url(../../images/campaign/20160104/soap/example01_bg.jpg) center 69px no-repeat;
+}
+.ExrightBox {
+	width: 329px;
+	background: url(../../images/campaign/20160104/soap/example02_bg.jpg) center 60px no-repeat;
+}
+.ExampleArea dl { padding-bottom: 15px;}
+.ExampleArea dl dt { margin-top: 12px;}
+
+.ExleftBox dl { padding-left: 17px;}
+.ExleftBox dl dt { margin-bottom: 104px;}
+.ExrightBox dl {padding-left: 16px;}
+.ExrightBox dl dt { margin-bottom: 137px;}
+
+
+/* ---------------------------------------------
+	.BnrImgArea
+	---------------------------------------------*/
+.BnrImgArea {
+	width: 660px;
+	margin: 0 auto;
+}
+
+/* ---------------------------------------------
+	.buy_area
+	---------------------------------------------*/
+#buy_area {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.right_heading { margin-bottom: 28px;}
+
+.quick_order_p {
+	overflow: hidden;
+	border-top: #060 dotted 2px;
+	margin-top: 30px;
+}
+
+.quick_order_p p {
+	margin: 15px 15px 5px 15px;
+}
+
+#quick_table_area th {
+	font-size: 13px;
+}
+
+#quick_table_area td {
+	font-weight: normal;
+}
+
+
+/* ---------------------------------------------
+	All Style
+	---------------------------------------------*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix { zoom: 1;}
+.left { float: left;}
+.right { float: right;}
+.campaign_chuki {
+	margin: 20px 25px;
+}
+.red {color: #F00;}
